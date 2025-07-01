@@ -221,16 +221,4 @@
         </inertial>
     </link>
 
-    <!-- A simple fixed joint from our empty world link, to our base. -->
-    <!-- The base origin is offset from the world origin. --> 
-    <joint name="base_joint_2" type="prismatic">
-        <origin xyz="0 0 -0.1" rpy="0 0 0"/>
-        <parent link="world"/>
-        <child link="front_foot"/>
-        <axis xyz="1 0 0"/>
-        <limit lower="-2" upper="2" velocity="100" effort="100"/> 
-    </joint>
-
-    
-
 </robot>
